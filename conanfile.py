@@ -5,11 +5,5 @@ class MoxPPRecipe(ConanFile):
     generators = "PremakeDeps"
 
     def requirements(self):
-        self.requires("spdlog/1.11.0")
-
-    def configure(self):
-	    # This only works on windows (we added this so that you can see
-        # how to change settings of packages)
-	    # self.options["spdlog"].wchar_support = True
-        pass
-
+        self.requires("benchmark/1.8.3")
+        self.requires("sqlite3/3.43.1")

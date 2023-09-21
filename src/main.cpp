@@ -1,8 +1,5 @@
-#include <spdlog/spdlog.h>
+#include "groups/sqlite_create.h"
+#include "groups/sqlite_insert.h"
+#include "groups/sqlite_select.h"
 
-int main()
-{
-    // We will use spdlog to say hello! 
-    // So that you can see that conan works :-)
-    spdlog::warn("Hello World!");
-}
+BENCHMARK_MAIN();
