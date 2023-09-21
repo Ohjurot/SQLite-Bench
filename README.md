@@ -4,8 +4,8 @@ This is a small project that aims to compare several SQLite features.
 The following benchmarks are performed (For both in-memory and on disk DBs):
 - Create Table
 - Insert record
-- Select with index
-- Select without index
+- Select with index (Random select from 1'000'000 Records)
+- Select without index (Random select from 1'000'000 Records)
 
 On my machine I get the following results (100 Iterations):
 | Benchmark | Median (File) | Median (Memory) | CV% (File) | CV% (Memory) |
